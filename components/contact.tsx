@@ -30,13 +30,13 @@ const links = [
 
 export function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-4xl px-6 py-24">
-      <div className="border-t border-zinc-800/60 pt-24">
-        <h2 className="mb-4 text-2xl font-semibold text-zinc-100">
-          <span className="mr-2 text-violet-400">/</span>Contact
+    <section id="contact" className="mx-auto max-w-4xl px-6 py-24 bg-[#030303]">
+      <div className="border-t border-white/[0.06] pt-24">
+        <h2 className="mb-4 text-2xl font-semibold text-white/90">
+          <span className="mr-2 bg-gradient-to-r from-indigo-400 to-rose-400 bg-clip-text text-transparent">/</span>Contact
         </h2>
 
-        <p className="mb-8 text-sm text-zinc-500">
+        <p className="mb-8 text-sm text-white/30">
           Currently open to internships and collaborations.
         </p>
 
@@ -47,20 +47,20 @@ export function Contact() {
                 href={link.href}
                 target={link.href.startsWith("mailto") ? undefined : "_blank"}
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 font-medium text-zinc-400 underline-offset-4 transition-colors duration-150 hover:text-violet-400 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
+                className="inline-flex items-center gap-1.5 font-medium text-white/50 underline-offset-4 transition-colors duration-150 hover:text-indigo-400 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
               >
                 {link.icon}
                 {link.label}
               </a>
               {i < links.length - 1 && (
-                <span className="text-zinc-700">·</span>
+                <span className="text-white/20">·</span>
               )}
             </span>
           ))}
         </div>
       </div>
 
-      <p className="mt-16 text-xs text-zinc-700">
+      <p className="mt-16 text-xs text-white/20">
         Oluchi Chukwurah · {new Date().getFullYear()}
       </p>
     </section>
